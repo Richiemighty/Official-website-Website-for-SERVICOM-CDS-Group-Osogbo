@@ -34,6 +34,8 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
+
     
 </head>
 <body>
@@ -111,7 +113,7 @@
             SERVICOM's legacy continues to inspire a new generation of civic leaders and corps members committed to national development through quality service delivery.
           </p>
         </div>
-      </section>
+    </section>
       
     <section class="section bg-light" id="services">
         <div class="section-title">
@@ -227,63 +229,59 @@
 
     <section class="section" id="gallery">
         <div class="section-title">
-            <h2>Gallery</h2>
+          <h2>Gallery</h2>
         </div>
-        
+      
         <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="images/IMG_3070.jpg" alt="Gallery 5">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <img src="images/osogram/1e13442f-93ec-4fab-b035-dcc872ae83ee.JPG" alt="Gallery 1">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/osogram/58b536bf-9182-4379-a397-b0aeb35769f6.JPG" alt="Gallery 2">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/osogram/9cc685f4-e26e-4522-b746-a0ba5c0e8f19.JPG" alt="Gallery 3">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/osogram/e01e3a8c-6ae0-453d-a1cd-de45f751a101.JPG" alt="Gallery 4">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/IMG_3069.jpg" alt="Gallery 5">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="images/osogram/9ee0bb2a-f95c-4b1c-a3ec-ac9f7000c67e.JPG" alt="Gallery 6">
-                <div class="gallery-overlay">
-                    <i class="fas fa-search-plus"></i>
-                </div>
-            </div>
+          <div class="gallery-item">
+            <img src="images/IMG_3070.jpg" alt="Gallery 5" class="gallery-thumb" />
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+      
+          <div class="gallery-item">
+            <img src="images/osogram/1e13442f-93ec-4fab-b035-dcc872ae83ee.JPG" alt="Gallery 1" class="gallery-thumb" />
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+      
+          <div class="gallery-item">
+            <img src="images/osogram/58b536bf-9182-4379-a397-b0aeb35769f6.JPG" alt="Gallery 2" class="gallery-thumb" />
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+      
+          <div class="gallery-item">
+            <img src="images/osogram/9cc685f4-e26e-4522-b746-a0ba5c0e8f19.JPG" alt="Gallery 3" class="gallery-thumb" />
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+      
+          <div class="gallery-item">
+            <img src="images/osogram/e01e3a8c-6ae0-453d-a1cd-de45f751a101.JPG" alt="Gallery 4" class="gallery-thumb" />
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+      
+          <div class="gallery-item">
+            <img src="images/IMG_3069.jpg" alt="Gallery 5 alt" class="gallery-thumb" />
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+      
+          <div class="gallery-item">
+            <img src="images/osogram/9ee0bb2a-f95c-4b1c-a3ec-ac9f7000c67e.JPG" alt="Gallery 6" class="gallery-thumb" />
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
         </div>
+      
         <div class="gallery-button-container">
-            <a href="gallery.html" class="view-gallery-button">
-              View Full Gallery
-              <i class="fas fa-arrow-right"></i>
-            </a>
+          <a href="gallery.html" class="view-gallery-button">
+            View Full Gallery
+            <i class="fas fa-arrow-right"></i>
+          </a>
         </div>
-          
+      
+        <div id="fullscreen-overlay" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background: rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:9999; cursor:pointer;">
+            <img id="fullscreen-img" src="" alt="Fullscreen Image" style="max-width:90vw; max-height:90vh; box-shadow: 0 0 20px rgba(255,255,255,0.5); cursor:default;" />
+        </div>
     </section>
-
+      
+      
     <section class="section bg-light" id="contact">
         <div class="section-title">
             <h2>Contact Us</h2>
@@ -356,7 +354,7 @@
     <a href="mailto:servicom.osogbo@gmail.com" class="social-icon email" target="_blank" aria-label="Email">
       <i class="fas fa-envelope"></i>
     </a>
-  </div>
+</div>
     
 
     <footer>
@@ -386,6 +384,9 @@
         </div>
     </footer>
 
+
+
+
     <script>
         // Mobile Menu Toggle
         const menuToggle = document.querySelector('.menu-toggle');
@@ -410,5 +411,38 @@
             });
         });
     </script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const overlay = document.getElementById('fullscreen-overlay');
+            const fullscreenImg = document.getElementById('fullscreen-img');
+        
+            // Select all images with class 'gallery-thumb' inside your gallery
+            const images = document.querySelectorAll('.gallery-thumb');
+        
+            images.forEach(img => {
+                img.style.cursor = 'pointer'; // show pointer cursor on hover
+        
+                img.addEventListener('click', (e) => {
+                fullscreenImg.src = e.target.src;  // set fullscreen image src
+                overlay.style.display = 'flex';    // show overlay (flex centers the image)
+                });
+            });
+
+            // Clicking on the overlay outside the image closes the fullscreen view
+            overlay.addEventListener('click', (e) => {
+                if (e.target === overlay) {  // only close if clicked on dimmed area (overlay itself)
+                overlay.style.display = 'none';
+                fullscreenImg.src = '';    // clear image src
+                }
+            });
+        });
+    </script>
+  
+
+    
+
+    
 </body>
 </html>

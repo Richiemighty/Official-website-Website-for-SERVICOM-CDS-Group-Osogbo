@@ -125,5 +125,38 @@
     </div>
   </div>
 
+
+
+  <!-- Fullscreen overlay container -->
+    <div id="fullscreen-overlay" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background: rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:9999; cursor:pointer;">
+        <img id="fullscreen-img" src="" alt="Fullscreen Image" style="max-width:90vw; max-height:90vh; box-shadow: 0 0 20px rgba(255,255,255,0.5); cursor:default;" />
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const overlay = document.getElementById('fullscreen-overlay');
+          const fullscreenImg = document.getElementById('fullscreen-img');
+      
+          // Select all gallery images
+          const images = document.querySelectorAll('.gallery-item img');
+      
+          images.forEach(img => {
+            img.addEventListener('click', (e) => {
+              fullscreenImg.src = e.target.src; // Set clicked image src to fullscreen image
+              overlay.style.display = 'flex';   // Show overlay (flex to center image)
+            });
+          });
+      
+          // Close overlay if clicked outside the image
+          overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) { // Only if the dimmed area is clicked
+              overlay.style.display = 'none';
+              fullscreenImg.src = ''; // Clear image src for cleanup
+            }
+          });
+        });
+    </script>
+      
+  
 </body>
 </html>
