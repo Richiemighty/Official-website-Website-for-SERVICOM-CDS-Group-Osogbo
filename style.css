@@ -106,7 +106,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    background: url('images/corper.jpg') no-repeat center center/cover;
     height: 500px;
     display: flex;
     align-items: center;
@@ -228,6 +228,89 @@ nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+
+.servicom-global {
+    margin-top: 2rem;
+    padding: 20px;
+    background: linear-gradient(to right, #f0f4f8, #fff);
+    border-left: 6px solid #4CAF50;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .servicom-global h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #2a7a4d;
+    font-weight: 600;
+  }
+  
+  .servicom-global p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Fade In Animation */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  
+
+
+
+  .gallery-button-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.view-gallery-button {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(135deg, #4CAF50, #2e7d32);
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.view-gallery-button:hover {
+  background: linear-gradient(135deg, #388E3C, #1b5e20);
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(56, 142, 60, 0.5);
+}
+
+.view-gallery-button i {
+  margin-left: 8px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 .services-grid {
     display: grid;
@@ -538,6 +621,76 @@ footer {
     font-size: 1.5rem;
 }
 
+
+
+
+.social-icons-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 22px;
+  color: #000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.35s ease;
+  text-decoration: none;
+  animation: pop-in 0.8s ease forwards;
+}
+
+.social-icon:hover {
+  transform: scale(1.2) rotate(8deg);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Custom Colors */
+.instagram {
+  background: radial-gradient(circle at 30% 107%, #feda75, #d62976, #962fbf, #4f5bd5);
+  color: #fff;
+}
+
+.tiktok {
+  background: #000;
+  color: #fff;
+}
+
+.whatsapp {
+  background: #25D366;
+  color: #fff;
+}
+
+.email {
+  background: #dd4b39;
+  color: #fff;
+}
+
+/* Pop Animation */
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+
+
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
@@ -545,7 +698,7 @@ footer {
     }
     
     .logo-container {
-        display: block
+        display: block;
         margin-bottom: 15px;
         justify-content: center;
 
