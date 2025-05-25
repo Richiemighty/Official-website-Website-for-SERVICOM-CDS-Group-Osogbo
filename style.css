@@ -627,12 +627,10 @@ footer {
 }
 
 
-
-
 .social-icons-fixed {
   position: fixed;
   bottom: 100px;
-  right: 20px;
+  right: 22px;
   z-index: 999;
   display: flex;
   flex-direction: column;
