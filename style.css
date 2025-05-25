@@ -361,8 +361,8 @@ nav ul li a:hover {
 }
 
 .team-member img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
@@ -631,7 +631,7 @@ footer {
 
 .social-icons-fixed {
   position: fixed;
-  bottom: 20px;
+  bottom: 100px;
   right: 20px;
   z-index: 999;
   display: flex;
@@ -694,6 +694,138 @@ footer {
 }
 
 
+
+
+
+
+
+
+.event-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.event-flyer {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.event-content {
+  padding: 20px;
+}
+
+.event-gallery {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.event-gallery img {
+  width: 30%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+#fullscreenOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+#fullscreenImage {
+  max-width: 90vw;
+  max-height: 90vh;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  cursor: default;
+}
+
+
+
+
+
+
+
+
+/* Popup Modal Styling */
+.cds-modal {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  align-items: center;
+  align-content: center;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.cds-modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 70%;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.cds-close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cds-close-btn:hover {
+  color: #000;
+}
+
+
+
+
+.copyright {
+  text-align: center;
+  /* padding: 20px 10px; */
+  font-size: 0.95rem;
+  color: #f1f1f1;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+.copyright a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: bolder;
+  transition: color 0.3s ease;
+}
+
+.copyright a:hover {
+  color: #1b5e20;
+  text-decoration: underline;
+}
 
 
 @media (max-width: 768px) {
