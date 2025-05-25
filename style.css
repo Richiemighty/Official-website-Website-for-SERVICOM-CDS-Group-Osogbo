@@ -107,7 +107,7 @@ nav ul li a:hover {
 
 .hero {
     background: url('images/corper.jpg') no-repeat center center/cover;
-    height: 500px;
+    height: 75vh;
     display: flex;
     align-items: center;
     text-align: center;
@@ -175,14 +175,14 @@ nav ul li a:hover {
 }
 
 .section {
-    padding: 80px 20px;
+    padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .section-title {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: var(--primary-color);
 }
 
