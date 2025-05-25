@@ -599,27 +599,41 @@
 
 <!-- POP UP Message -->
 <script>
-    window.addEventListener("load", function () {
-      const modal = document.getElementById("cds-popup");
-      const closeBtn = document.querySelector(".cds-close-btn");
+    window.addEventListener('load', () => {
+      const modal = document.getElementById('cds-popup');
+      const closeBtn = document.querySelector('.cds-close-btn');
   
-      // Show popup on first visit
-      modal.style.display = "block";
+      const lastShown = localStorage.getItem('cdsModalLastShown');
+      const now = new Date().getTime();
+      const minutes20 = 20 * 60 * 1000;
   
-      // Close on click of X
-      closeBtn.onclick = function () {
-        modal.style.display = "none";
+      // Check if modal should be shown
+      if (!lastShown || now - parseInt(lastShown, 10) > minutes20) {
+        // Show modal
+        setTimeout(() => {
+          modal.classList.add('show');
+          modal.style.display = 'flex';
+          // Save current time
+          localStorage.setItem('cdsModalLastShown', now.toString());
+        }, 300);
       }
   
-      // Close when clicking outside the modal
-      window.onclick = function (event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
+      // Close button
+      closeBtn.addEventListener('click', () => {
+        modal.classList.remove('show');
+        modal.style.display = 'none';
+      });
+  
+      // Click outside to close
+      window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.remove('show');
+          modal.style.display = 'none';
         }
-      }
+      });
     });
-  </script>
-  
+</script>
+      
 
   
 </body>
