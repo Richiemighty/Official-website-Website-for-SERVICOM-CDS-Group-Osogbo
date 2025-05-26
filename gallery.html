@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SERVICOM Full Gallery</title>
+  <title>SERVICOM Media Gallery</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
@@ -26,8 +26,29 @@
       font-size: 2rem;
     }
 
+    .filter-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .filter-btn {
+      padding: 10px 20px;
+      margin: 10px 5px;
+      border: none;
+      background-color: #4caf50;
+      color: white;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background-color: #2e7d32;
+    }
+
     .gallery-container {
-      padding: 40px 20px;
+      padding: 20px;
       max-width: 1200px;
       margin: auto;
     }
@@ -88,28 +109,47 @@
     <h1>SERVICOM Media Gallery</h1>
   </header>
 
+  <!-- Filter Buttons -->
+  <div class="filter-container">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="training">Tech Training</button>
+    <button class="filter-btn" data-filter="sensitization">Sensitization Programs</button>
+    <button class="filter-btn" data-filter="roadshow">Roadshow</button>
+  </div>
+
   <div class="gallery-container">
     <div class="gallery-grid">
 
-      <!-- IMAGES -->
-      <div class="gallery-item"><img src="images/osogram/9cc4bd74-2aab-41a4-b2d2-1c4ee6a8513b.JPG" alt=""></div>
-      <div class="gallery-item"><img src="images/osogram/1e13442f-93ec-4fab-b035-dcc872ae83ee.JPG" alt=""></div>
-      <div class="gallery-item"><img src="images/osogram/004fb067-b99e-486b-a39a-46705b2dc2a2.JPG" alt=""></div>
-      <div class="gallery-item"><img src="images/osogram/6c65a805-3b5b-4ece-9b92-6f6da9750b61 2.JPG" alt=""></div>
-      <div class="gallery-item"><img src="images/osogram/6fa764b2-7da3-4707-9f77-52084bff3e79.JPG" alt=""></div>
-      <div class="gallery-item"><img src="images/osogram/8d9ca75a-5bc9-4d97-88ca-3a6e2c67442a.JPG" alt=""></div>
-      <div class="gallery-item"><img src="images/osogram/9cc685f4-e26e-4522-b746-a0ba5c0e8f19.JPG" alt=""></div>
-      <div class="gallery-item"><img src="images/osogram/9ee0bb2a-f95c-4b1c-a3ec-ac9f7000c67e.JPG" alt=""></div>
-      <div class="gallery-item"><img src="images/osogram/58b536bf-9182-4379-a397-b0aeb35769f6.JPG" alt=""></div>
-      <div class="gallery-item"><img src="images/osogram/346151fb-2834-478c-8f60-2222829ab548.JPG" alt=""></div>
-      <div class="gallery-item"><img src="images/osogram/b316dd9d-c1ac-4bed-875d-c80dc45d6d24.JPG" alt=""></div>
-      <div class="gallery-item"><img src="images/osogram/cc1545b6-c2cd-4eb8-9824-c27bbf063eb3.JPG" alt=""></div>
-      <div class="gallery-item"><img src="images/osogram/d9c5bfc6-7cc8-483d-b7f5-292926d5682c.jpg" alt=""></div>
-      <div class="gallery-item"><img src="images/osogram/e01e3a8c-6ae0-453d-a1cd-de45f751a101.JPG" alt=""></div>
-      <div class="gallery-item"><img src="images/osogram/e407f47b-f4c0-4c97-be3d-f85f16fcfec3.JPG" alt=""></div>
+      <!-- IMAGES: Add data-category attribute -->
+      <div class="gallery-item" data-category="sensitization"><img src="images/osogram/58b536bf-9182-4379-a397-b0aeb35769f6.JPG" alt=""></div>
+     
+      <div class="gallery-item" data-category="training"><img src="images/tech training/WhatsApp Image 2025-05-25 at 9.57.03 PM.jpeg" alt=""></div>
+      <div class="gallery-item" data-category="sensitization"><img src="images/osogram/346151fb-2834-478c-8f60-2222829ab548.JPG" alt=""></div>
+
+      <div class="gallery-item" data-category="training"><img src="images/tech training/8062d9ea-e4a0-441e-97a5-ce810b33f349.JPG" alt=""></div>
+      <div class="gallery-item" data-category="training"><img src="images/tech training/292a623a-5ea3-4a5e-bdd6-837a4f808a35.JPG" alt=""></div>
+
+      <div class="gallery-item" data-category="roadshow"><img src="images/Human Right/WhatsApp Image 2025-05-25 at 9.51.52 PM.jpeg" alt=""></div>
+      <div class="gallery-item" data-category="roadshow"><img src="images/Human Right/WhatsApp Image 2025-05-25 at 9.51.57 PM.jpeg" alt=""></div>
+      <div class="gallery-item" data-category="sensitization"><img src="images/osogram/b316dd9d-c1ac-4bed-875d-c80dc45d6d24.JPG" alt=""></div>
+      <div class="gallery-item" data-category="sensitization"><img src="images/osogram/cc1545b6-c2cd-4eb8-9824-c27bbf063eb3.JPG" alt=""></div>
+      <div class="gallery-item" data-category="sensitization"><img src="images/osogram/d9c5bfc6-7cc8-483d-b7f5-292926d5682c.jpg" alt=""></div>
+      <div class="gallery-item" data-category="sensitization"><img src="images/osogram/e01e3a8c-6ae0-453d-a1cd-de45f751a101.JPG" alt=""></div>
+      <div class="gallery-item" data-category="sensitization"><img src="images/osogram/6c65a805-3b5b-4ece-9b92-6f6da9750b61 2.JPG" alt=""></div>
+      <div class="gallery-item" data-category="sensitization"><img src="images/osogram/6fa764b2-7da3-4707-9f77-52084bff3e79.JPG" alt=""></div>
+      <div class="gallery-item" data-category="sensitization"><img src="images/osogram/8d9ca75a-5bc9-4d97-88ca-3a6e2c67442a.JPG" alt=""></div>
+      <div class="gallery-item" data-category="training"><img src="images/tech training/8062d9ea-e4a0-441e-97a5-ce810b33f349.JPG" alt=""></div>
+      <div class="gallery-item" data-category="training"><img src="images/tech training/fec96b25-29c7-4051-aaec-a365d4c00345.JPG" alt=""></div>
+      <div class="gallery-item" data-category="training"><img src="images/tech training/b0e44b92-f411-430d-94eb-2497053e27e0.JPG" alt=""></div>
+      <div class="gallery-item" data-category="sensitization"><img src="images/osogram/9cc685f4-e26e-4522-b746-a0ba5c0e8f19.JPG" alt=""></div>
+      <div class="gallery-item" data-category="sensitization"><img src="images/osogram/9ee0bb2a-f95c-4b1c-a3ec-ac9f7000c67e.JPG" alt=""></div>
+      <div class="gallery-item" data-category="sensitization"><img src="images/osogram/e407f47b-f4c0-4c97-be3d-f85f16fcfec3.JPG" alt=""></div>
+      <div class="gallery-item" data-category="sensitization"><img src="images/osogram/9cc4bd74-2aab-41a4-b2d2-1c4ee6a8513b.JPG" alt=""></div>
+      <div class="gallery-item" data-category="sensitization"><img src="images/osogram/1e13442f-93ec-4fab-b035-dcc872ae83ee.JPG" alt=""></div>
+      <div class="gallery-item" data-category="sensitization"><img src="images/osogram/004fb067-b99e-486b-a39a-46705b2dc2a2.JPG" alt=""></div>
 
       <!-- VIDEO -->
-      <div class="gallery-item">
+      <div class="gallery-item" data-category="sensitization">
         <video controls>
           <source src="images/osogram/f3344ebf-6d61-4ffa-983c-e194a3e38ecf.MP4" type="video/mp4">
           Your browser does not support the video tag.
@@ -125,38 +165,54 @@
     </div>
   </div>
 
+  <!-- Fullscreen Overlay -->
+  <div id="fullscreen-overlay" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background: rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:9999; cursor:pointer;">
+    <img id="fullscreen-img" src="" alt="Fullscreen Image" style="max-width:90vw; max-height:90vh; box-shadow: 0 0 20px rgba(255,255,255,0.5); cursor:default;" />
+  </div>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const overlay = document.getElementById('fullscreen-overlay');
+      const fullscreenImg = document.getElementById('fullscreen-img');
+      const images = document.querySelectorAll('.gallery-item img');
 
-  <!-- Fullscreen overlay container -->
-    <div id="fullscreen-overlay" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background: rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:9999; cursor:pointer;">
-        <img id="fullscreen-img" src="" alt="Fullscreen Image" style="max-width:90vw; max-height:90vh; box-shadow: 0 0 20px rgba(255,255,255,0.5); cursor:default;" />
-    </div>
+      images.forEach(img => {
+        img.addEventListener('click', (e) => {
+          fullscreenImg.src = e.target.src;
+          overlay.style.display = 'flex';
+        });
+      });
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-          const overlay = document.getElementById('fullscreen-overlay');
-          const fullscreenImg = document.getElementById('fullscreen-img');
-      
-          // Select all gallery images
-          const images = document.querySelectorAll('.gallery-item img');
-      
-          images.forEach(img => {
-            img.addEventListener('click', (e) => {
-              fullscreenImg.src = e.target.src; // Set clicked image src to fullscreen image
-              overlay.style.display = 'flex';   // Show overlay (flex to center image)
-            });
-          });
-      
-          // Close overlay if clicked outside the image
-          overlay.addEventListener('click', (e) => {
-            if (e.target === overlay) { // Only if the dimmed area is clicked
-              overlay.style.display = 'none';
-              fullscreenImg.src = ''; // Clear image src for cleanup
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+          overlay.style.display = 'none';
+          fullscreenImg.src = '';
+        }
+      });
+
+      // Filter functionality
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filter = btn.getAttribute('data-filter');
+
+          galleryItems.forEach(item => {
+            const category = item.getAttribute('data-category');
+            if (filter === 'all' || category === filter) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
             }
           });
         });
-    </script>
-      
-  
+      });
+    });
+  </script>
+
 </body>
 </html>

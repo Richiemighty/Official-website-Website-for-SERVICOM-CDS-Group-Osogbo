@@ -816,8 +816,8 @@ footer {
 }
 
 .copyright a {
-  color: #2e7d32;
-  text-decoration: none;
+  color: #9079de;
+  /* text-decoration: none; */
   font-weight: bolder;
   transition: color 0.3s ease;
 }
@@ -885,7 +885,6 @@ footer {
         margin-bottom: 30px;
     }
 }
-
 
 
 
