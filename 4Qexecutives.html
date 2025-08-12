@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICOM CDS - 2025 Executive Team</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1a5276;
+            --secondary-color: #e74c3c;
+            --light-color: #f5f5f5;
+            --dark-color: #333;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark-color);
+            line-height: 1.6;
+            background-color: var(--light-color);
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #2980b9);
+            color: white;
+            padding: 1rem 0;
+            position: relative;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-container img {
+            height: 80px;
+            margin-right: 15px;
+        }
+        
+        .logo-text h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        
+        .logo-text p {
+            margin: 5px 0 0;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--primary-color);
+        }
+        
+        .section-title h2 {
+            font-size: 2.2rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        
+        .executives-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .executive-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        
+        .executive-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .executive-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .executive-info {
+            padding: 20px;
+        }
+        
+        .executive-info h3 {
+            margin: 0 0 10px;
+            color: var(--primary-color);
+        }
+        
+        .executive-info p {
+            margin: 0;
+            color: var(--secondary-color);
+            font-weight: 500;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .social-links a {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: var(--secondary-color);
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 50px 0 20px;
+            text-align: center;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-logo {
+            margin-bottom: 30px;
+        }
+        
+        .footer-logo img {
+            height: 80px;
+        }
+        
+        .copyright {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            .executives-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="images/industrial-court-upholds-nysc-preliminary-objection-national-youth-service-corps-11562998099jxdao7r2ez-removebg-preview.png" alt="NYSC Logo">
+                <img src="images/servicom-logo-removebg-preview.png" alt="SERVICOM Logo">
+                <div class="logo-text">
+                    <h1>SERVICOM CDS</h1>
+                    <p>NYSC Osogbo, Osun State</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="section-title">
+            <h2>2025 Executive Team</h2>
+            <p>Meet the dedicated team leading SERVICOM CDS this service year</p>
+        </div>
+        
+        <div class="executives-grid">
+            <!-- Executive 1 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/1e76602b-d0f6-4e4b-ac6c-76248f83d873.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Taiwo Emmanuel Olakunle</h3>
+                    <p>President</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 2 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-01 at 11.47.19.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Ademola Oreoluwa</h3>
+                    <p>Vice President</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 3 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-01 at 11.48.57.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Adenusi Olayiwola</h3>
+                    <p>Social Director</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 4 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-01 at 11.50.32.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Ojolola Victor</h3>
+                    <p>Media Manager</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 5 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-01 at 11.54.17.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Okechukwu Ann</h3>
+                    <p>PRO</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 6 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-01 at 11.56.02.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Executive Name</h3>
+                    <p>Position</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 7 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-01 at 11.59.58.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Executive Name</h3>
+                    <p>Position</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 8 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-01 at 12.02.07.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Executive Name</h3>
+                    <p>Position</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 9 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-01 at 12.17.01.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Executive Name</h3>
+                    <p>Position</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 10 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-01 at 12.59.08.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Executive Name</h3>
+                    <p>Position</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 11 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-01 at 14.26.06.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Executive Name</h3>
+                    <p>Position</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 12 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-01 at 15.41.54.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Executive Name</h3>
+                    <p>Position</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 13 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-02 at 09.41.30.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Executive Name</h3>
+                    <p>Position</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 14 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-03 at 07.49.10.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Executive Name</h3>
+                    <p>Position</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/servicom-logo-removebg-preview.png" alt="SERVICOM Logo">
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 SERVICOM CDS Group, NYSC Osogbo. All Rights Reserved.</p>
+                <p>Website created by Richie Mighty</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // You can add JavaScript functionality here if needed
+        // For example, image lightbox or other interactive elements
+    </script>
+</body>
+</html>
