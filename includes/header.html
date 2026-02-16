@@ -1,29 +1,31 @@
-<!-- Header -->
 <header>
-    <div class="header-container">
-        <div class="logo-section">
-            <img src="../images/nysc-logo.png" alt="NYSC Logo" class="header-logo">
-            <img src="../images/servicom-logo.png" alt="SERVICOM Logo" class="header-logo">
-            <div class="logo-text">
-                <h5>SERVICOM CDS</h5>
-                <p>Osogbo, Osun State</p>
-            </div>
-        </div>
-        
-        <nav class="main-nav">
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul id="nav-menu">
-                <li><a href="/index.html" class="nav-link">Home</a></li>
-                <li><a href="/index.html/about" class="nav-link">About Us</a></li>
-                <li><a href="/index.html/services" class="nav-link">Services</a></li>
-                <li><a href="/index.html/executives" class="nav-link">Current Team</a></li>
-                <li><a href="/index.html/events" class="nav-link">Events</a></li>
-                <li><a href="/index.html/contact" class="nav-link">Contact</a></li>
-                <li><a href="/archive/archive.html" class="nav-link">Archive</a></li>
-                
-            </ul>
-        </nav>
+  <div class="header-container">
+    <!-- Logo Section -->
+    <div class="logo-section">
+      <img src="../images/nysc-logo.png" alt="NYSC Logo" class="header-logo">
+      <img src="../images/servicom-logo.png" alt="SERVICOM Logo" class="header-logo">
+      <div class="logo-text">
+        <h5>SERVICOM CDS</h5>
+        <p>Osogbo, Osun State</p>
+      </div>
     </div>
+
+    <!-- Hamburger Toggle (Outside nav!) -->
+    <div class="menu-toggle" id="menuToggle">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <ul id="navMenu"> <!-- Note: ID changed to match CSS -->
+        <li><a href="/index.html" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#executives" class="nav-link">Current Team</a></li>
+        <li><a href="#events" class="nav-link">Events</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="/archive/archive.html" class="nav-link">Archive</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
