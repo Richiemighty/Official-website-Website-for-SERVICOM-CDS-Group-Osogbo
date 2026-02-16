@@ -1,0 +1,84 @@
+{
+  "batch": "2025/2026 Executives",
+  "period": "November 2025 - Present",
+  "executives": [
+    {
+      "name": "Adewuyi Omotola",
+      "position": "President",
+      "image": "current/images/excos/president.jpg",
+      "whatsapp": "https://wa.me/2348012345678"
+    },
+    {
+      "name": "Adeyanju Oluwakorede Orebi",
+      "position": "Vice President",
+      "image": "current/images/excos/vice-president.jpg",
+      "whatsapp": "https://wa.me/2348012345678"
+    },
+    {
+      "name": "Michael Chidinma Ebere",
+      "position": "General Secretary",
+      "image": "current/images/excos/general-secretary.jpg",
+      "whatsapp": "https://wa.me/2348012345678"
+    },
+    {
+      "name": "Michael Chidinma Ebere",
+      "position": "Ass General Secretary",
+      "image": "current/images/excos/general-secretary2.jpg",
+      "whatsapp": "https://wa.me/2348012345678"
+    },
+    {
+      "name": "Kareem Mustapha Babatunde",
+      "position": "IT Officer",
+      "image": "current/images/excos/it-officer.jpg",
+      "whatsapp": "https://wa.me/2348012345678"
+    },
+    {
+      "name": "Akindeko Omomayowa Success ",
+      "position": "Social Director",
+      "image": "current/images/excos/social-director.jpg",
+      "whatsapp": "https://wa.me/2348012345678"
+    },
+    {
+      "name": "Unuode Ogheneteyeri Ruth",
+      "position": "Treasurer",
+      "image": "current/images/excos/treasurer.jpg",
+      "whatsapp": "https://wa.me/2348012345678"
+    },
+    {
+      "name": "Egbuobi Oluebube Jessica",
+      "position": "Sport director",
+      "image": "current/images/excos/sport-director.jpg",
+      "whatsapp": "https://wa.me/2348012345678"
+    },
+    {
+      "name": "Opoola  Barakat Omoshalewa",
+      "position": "Media Manager",
+      "image": "current/images/excos/media-manager.jpg",
+      "whatsapp": "https://wa.me/2348012345678"
+    },
+    {
+      "name": "MARVELLOUS EMERENI",
+      "position": "Media Manager",
+      "image": "current/images/excos/media-manager2.jpeg",
+      "whatsapp": "https://wa.me/2348012345678"
+    },
+    {
+      "name": "Oridemilade Sly",
+      "position": "PRO",
+      "image": "current/images/excos/pro.jpg",
+      "whatsapp": "https://wa.me/2348012345678"
+    },
+    {
+      "name": "Olatunde Damola T",
+      "position": "Welfare Officer",
+      "image": "current/images/excos/welfare-officer.jpeg",
+      "whatsapp": "https://wa.me/2348012345678"
+    },
+    {
+      "name": "Popoola Joshua",
+      "position": "Speaker",
+      "image": "current/images/excos/speaker.jpg",
+      "whatsapp": "https://wa.me/2348012345678"
+    }
+  ]
+}

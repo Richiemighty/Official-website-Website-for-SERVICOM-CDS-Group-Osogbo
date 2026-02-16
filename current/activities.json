@@ -1,0 +1,22 @@
+{
+  "activities": [
+    {
+      "id": "sanitary-donation-ede",
+      "title": "Sanitary Towels Donation to NYSC Camp Ede",
+      "date": "January 20, 2026",
+      "venue": "NYSC Orientation Camp, Ede, Osun State",
+      "flyer": "current/images/activities/sanitary-donation-ede/flyer1.jpeg",
+      "description": "SERVICOM CDS Osogbo presented sanitary towels to support 2026 Batch A female corps members at NYSC Camp Ede. The team, led by President Adewuyi Omotola, met with the new State Coordinator, Mr. Kubiangha Ita, to deliver this welfare intervention — continuing a legacy from past administrations. The State Coordinator commended SERVICOM CDS as the first group to make such a gesture under his leadership.",
+      "pageUrl": "current/pages/sanitary-donation-ede.html"
+    },
+    {
+      "id": "osun-grove-visit",
+      "title": "Visit to Osun Sacred Grove",
+      "date": "January 27, 2026",
+      "venue": "Osun Sacred Grove, Osogbo, Osun State",
+      "flyer": "current/images/activities/osun-grove-visit/flyer1.jpeg",
+      "description": "The SERVICOM CDS team visited the UNESCO World Heritage Site, Osun Sacred Grove, to promote cultural awareness and environmental stewardship among corps members. The outing reinforced our commitment to holistic community engagement — blending heritage preservation with public service values.",
+      "pageUrl": "current/pages/osun-grove-visit.html"
+    }
+  ]
+}
