@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICOM CDS - 2025 Executive Team</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #1a5276;
+            --secondary-color: #e74c3c;
+            --light-color: #f5f5f5;
+            --dark-color: #333;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark-color);
+            line-height: 1.6;
+            background-color: var(--light-color);
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #2980b9);
+            color: white;
+            padding: 1rem 0;
+            position: relative;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-container img {
+            height: 80px;
+            margin-right: 15px;
+        }
+        
+        .logo-text h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        
+        .logo-text p {
+            margin: 5px 0 0;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--primary-color);
+        }
+        
+        .section-title h2 {
+            font-size: 2.2rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        
+        .executives-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .executive-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        
+        .executive-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .executive-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .executive-info {
+            padding: 20px;
+        }
+        
+        .executive-info h3 {
+            margin: 0 0 10px;
+            color: var(--primary-color);
+        }
+        
+        .executive-info p {
+            margin: 0;
+            color: var(--secondary-color);
+            font-weight: 500;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .social-links a {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: var(--secondary-color);
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 50px 0 20px;
+            text-align: center;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-logo {
+            margin-bottom: 30px;
+        }
+        
+        .footer-logo img {
+            height: 80px;
+        }
+        
+        .copyright {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            .executives-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+
+         .president-card {
+            display: flex;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .president-image {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .president-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .president-details {
+            flex: 1;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .president-details h3 {
+            font-size: 1.8rem;
+            color: #1a5276;
+            margin-bottom: 5px;
+        }
+
+        .position {
+            color: #e74c3c;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .bio {
+            color: #555;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+
+        /* Carousel Styles */
+        .executives-carousel {
+            padding: 20px;
+            position: relative;
+        }
+
+        .team-member {
+            background: white;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin: 0 10px;
+            height: auto;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #f5f5f5;
+            margin-bottom: 15px;
+        }
+
+        .team-member h3 {
+            color: #1a5276;
+            margin-bottom: 5px;
+        }
+
+        .team-member p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .swiper-button-next, 
+        .swiper-button-prev {
+            color: #1a5276;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #1a5276;
+        }
+
+        @media (max-width: 768px) {
+            .president-card {
+                flex-direction: column;
+            }
+            
+            .president-image {
+                min-height: 300px;
+            }
+        }
+    </style>
+        <script src="../../includes/loader.js"></script>
+
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <section class="section">
+        <div class="section-title">
+            <h2>2025 Executive Team & Activities</h2>
+            <h3>Sept 2025 to November 2025</h3>
+            <p>Meet the dedicated team leading SERVICOM CDS</p>
+        </div>
+
+                <!-- President Card (Standalone) -->
+        <div class="president-card">
+            <div class="president-image">
+                <img src="/archive/batch-b-2025/images/2025 New Executives/pressy.jpg" alt="Malik Mohammed M.O">
+            </div>
+            <div class="president-details">
+                <h3>Malik Mohammed M.O</h3>
+                <p class="position">SERVICOM CDS President</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="bio">Leading our commitment to service excellence and quality service delivery in NYSC Osogbo.</p>
+            </div>
+        </div>
+        
+        <div class="executives-grid">
+            <!-- Executive 1 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-02 at 09.41.30.jpg" alt="Executive Member" class="executive-image">
+
+                <div class="executive-info">
+                    <h3>Oluwakorede Adeyanju</h3>
+                    <p>Vice President</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 2 -->
+            <div class="executive-card">
+                <img src="/archive/batch-b-2025/images/" alt="">
+                <img src="/images/2025 New Executives/1e76602b-d0f6-4e4b-ac6c-76248f83d873.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Omojola Ayotomiwa</h3>
+                    <p>General Secretary</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 3 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-01 at 11.48.57.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Adenusi Olayiwola</h3>
+                    <p>Social Director</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 4 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-01 at 11.50.32.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Atoki Fatima</h3>
+                    <p>Media Manager</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 5 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-01 at 11.54.17.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Unuode Ogheneteyeri Ruth</h3>
+                    <p>Treasurer</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 6 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-01 at 11.56.02.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Egbedokun Honour</h3>
+                    <p>Welfare Officer</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 7 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-01 at 11.59.58.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Executive Name</h3>
+                    <p>Position</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 8 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-01 at 12.02.07.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Isaac Mercy Chinwe</h3>
+                    <p>Speaker</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 9 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-01 at 12.17.01.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Executive Name</h3>
+                    <p>Position</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 10 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-01 at 12.59.08.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Oridemilade Sly</h3>
+                    <p>PRO</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 11 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-01 at 14.26.06.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Egbuobi Oluebube Jessica</h3>
+                    <p>Financial Secretary</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 12 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-01 at 15.41.54.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Executive Name</h3>
+                    <p>Position</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 13 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-02 at 09.41.30.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Executive Name</h3>
+                    <p>Position</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Executive 14 -->
+            <div class="executive-card">
+                <img src="images/2025 New Executives/WhatsApp Image 2025-08-03 at 07.49.10.jpg" alt="Executive Member" class="executive-image">
+                <div class="executive-info">
+                    <h3>Executive Name</h3>
+                    <p>Position</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Events Section -->
+<section class="section bg-light" id="events">
+    <div class="section-title">
+        <h2>Our Past Events & Programs</h2>
+    </div>
+    
+    <!-- Swiper Container -->
+    <div class="swiper events-swiper">
+        <div class="swiper-wrapper">
+            <!-- Event 1: FCCPC Sensitization -->
+            <div class="swiper-slide event-slide">
+                <div class="event-card">
+                    <img src="reports/fccpc/WhatsApp Image 2025-09-13 at 03.50.50.jpeg" alt="SERVICOM CDS Sensitization Session" class="event-flyer">
+                    <div class="event-content">
+                        <h3>SERVICOM CDS Sensitization Session</h3>
+                        <span class="event-date">Tuesday, September 16, 2025 | 11:00 AM</span>
+                        <p><strong>Organized by:</strong> FCCPC Osun State Office & NYSC SERVICOM CDS, Osogbo L.G.</p>
+                        <p><strong>Venue:</strong> FCCPC Osun State Office</p>
+                        <p><strong>Objective:</strong> Strengthen collaboration, foster awareness of consumer rights, and sensitize corps members on FCCPC's mandate.</p>
+                        <div class="event-gallery">
+                            <img src="reports/fccpc/Picture1.png" alt="SERVICOM CDS Anthem Session">
+                            <img src="reports/fccpc/Picture3.png" alt="Paper Presentation">
+                            <img src="reports/fccpc/Picture8.png" alt="Group Picture Batch A with FCCPC Team">
+                        </div>
+                    </div>
+                </div>
+                    <div class="btnn">
+                        <a href="reports/fccpc/fccpc.html" class="report-btn">Full Report Page</a>
+                    </div>
+            </div>
+
+            <!-- Event 2: Capacity Building -->
+            <div class="swiper-slide event-slide">
+                <div class="event-card">
+                    <img src="images/fliers/44716c20-59b0-495c-9412-9c7567e275e2.JPG" alt="Free Capacity Building Class" class="event-flyer">
+                    <div class="event-content">
+                        <h3>Free Capacity Building Class</h3>
+                        <span class="event-date">Saturday, 24th May, 2025 | 08:00 AM</span>
+                        <p><strong>Theme:</strong> From PPA to Prosperous Paycheck</p>
+                        <p>"Turning NSC free time into future pay time for all Corp members in Servicom CDs group and Osogbo corpers."</p>
+                        <p><strong>Speakers:</strong><br>
+                            Richard Oluwaseun Kehinde (Data Scientist)<br>
+                            Olaide Moyinoluwa (Writer/YouTuber)<br>
+                            Host: Taiwo Emmanuel Olakunle (Servicom CDS President)
+                        </p>
+                        <p><strong>Venue:</strong> Ataoja School of Science, Osogbo, Osun State.</p>
+                        <div class="event-gallery">
+                            <img src="images/tech training/WhatsApp Image 2025-05-25 at 9.57.03 PM.jpeg" alt="Group Photo 3">
+                            <img src="images/tech training/1d5c8903-059b-4cc0-ae63-75d9861445d9.JPG" alt="Group Photo 1">
+                            <img src="images/tech training/8062d9ea-e4a0-441e-97a5-ce810b33f349.JPG" alt="Group Photo 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 3: Sex Education -->
+            <div class="swiper-slide event-slide">
+                <div class="event-card">
+                    <img src="images/fliers/040821ad-1a69-499b-a205-9289c4db3d7b.JPG" alt="Sex Education & Adolescent Development" class="event-flyer">
+                    <div class="event-content">
+                        <h3>Sex Education & Adolescent Development</h3>
+                        <span class="event-date">Friday, May 23rd, 2025 | 07:00 AM</span>
+                        <p>"It's imperative to educate the students on sex education, adolescent development, puberty, personal development and more."</p>
+                        <p>This initiative positively impacts the students' lives and contributes to their overall well-being.</p>
+                        <p><strong>Venue:</strong> Osogbo Grammar School, Osun State.</p>
+                        <div class="event-gallery">
+                            <img src="images/osogram/004fb067-b99e-486b-a39a-46705b2dc2a2.JPG" alt="Group Photo 1">
+                            <img src="images/osogram/9cc4bd74-2aab-41a4-b2d2-1c4ee6a8513b.JPG" alt="Group Photo 2">
+                            <img src="images/osogram/8d9ca75a-5bc9-4d97-88ca-3a6e2c67442a.JPG" alt="Group Photo 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event 4: Human Rights Day -->
+            <div class="swiper-slide event-slide">
+                <div class="event-card">
+                    <img src="images/fliers/220f1711-5c49-4815-94ae-2b261b155670.jpg" alt="Roadshow Sensitization on World Human Rights Day" class="event-flyer">
+                    <div class="event-content">
+                        <h3>Roadshow Sensitization on World Human Rights Day</h3>
+                        <span class="event-date">Tuesday, December 10, 2024 | 09:00 AM</span>
+                        <p><strong>Organized by:</strong> National Orientation Agency, Osun Directorate</p>
+                        <p><strong>Theme:</strong> Moving Nigeria to Greatness</p>
+                        <p><strong>Route:</strong> Okefia → Old Garage → Olaiya → Ogo Oluwa</p>
+                        <div class="event-gallery">
+                            <img src="images/Human Right/WhatsApp Image 2025-05-25 at 9.51.52 PM.jpeg" alt="Roadshow Photo 1">
+                            <img src="images/Human Right/WhatsApp Image 2025-05-25 at 9.51.57 PM.jpeg" alt="Roadshow Photo 2">
+                            <img src="images/fliers/220f1711-5c49-4815-94ae-2b261b155670.jpg" alt="Roadshow Photo 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Event 5: Educational Materials Donation -->
+            <div class="swiper-slide event-slide">
+            <div class="event-card">
+                <img src="reports/donation/WhatsApp Image 2025-07-16 at 06.20.18.jpeg" alt="SERVICOM CDS Donates Educational Materials" class="event-flyer">
+                <div class="event-content">
+                <h3>SERVICOM CDS Donates Educational Materials</h3>
+                <span class="event-date">July 16, 2025 | 10:00 AM</span>
+                <p><strong>Venue:</strong> NYSC Foundation Nursery and Primary School, Omo West, Osogbo, Osun State</p>
+                <p>Donation of white marker boards, board cleaners, and markers to support the school established by a Corps member in 1993.</p>
+                <div class="event-gallery">
+                    <img src="images/WhatsApp Image 2025-07-16 at 06.20.18.jpeg" alt="Materials Presentation">
+                    <img src="images/WhatsApp Image 2025-07-16 at 06.20.19.jpeg" alt="Group Photo">
+                    <img src="images/WhatsApp Image 2025-07-22 at 22.14.27.jpeg" alt="Pupils">
+                </div>
+                </div>
+            </div>
+            <div class="btnn">
+                <a href="reports/donation/donation.html" class="report-btn">Full Report Page</a>
+            </div>
+            </div>
+        </div>
+        
+        <!-- Swiper Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<style>
+/* ===============================
+   EVENT CARD
+================================ */
+.event-card {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* ===============================
+   COVER IMAGE (HERO)
+================================ */
+.event-flyer {
+    width: 100%;
+    height: 2000px;       /* important to keep full height */
+    object-fit: cover; /* preserve full image */
+    display: block;     /* removes small gaps below images */
+}
+
+
+/* ===============================
+   CONTENT
+================================ */
+.event-content {
+    padding: 18px 20px 22px;
+}
+
+.event-content h3 {
+    margin-bottom: 6px;
+}
+
+.event-date {
+    font-size: 0.9rem;
+    color: #fdf7f7;
+    display: initial;
+    margin-bottom: 12px;
+}
+
+/* ===============================
+   GALLERY STRIP
+================================ */
+.event-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* PC */
+    gap: 12px;
+    margin-top: 16px;
+}
+
+/* Perfect square thumbnails */
+.event-gallery img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.25s ease;
+}
+
+.event-gallery img:hover {
+    transform: scale(1.001);
+}
+
+/* ===============================
+   BUTTON
+================================ */
+.btnn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.report-btn {
+    padding: 10px 25px;
+    background: #28a745;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.report-btn:hover {
+    background: #218838;
+    transform: translateY(-2px);
+}
+
+.report-btn:active {
+    transform: scale(0.96);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 576px) {
+    .report-btn {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+}
+
+/* ===============================
+   RESPONSIVE BREAKPOINTS
+================================ */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .event-flyer {
+        height: 220px;
+    }
+
+    .event-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Phones */
+@media (max-width: 576px) {
+    .event-flyer {
+        height: 180px;
+    }
+
+    .event-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    new Swiper('.events-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+});
+</script>
+
+
+    <!-- Gallery Section -->
+    <section class="section" id="gallery">
+    <div class="section-title">
+        <h2>Gallery</h2>
+    </div>
+    <div class="homepage-gallery-grid">
+        <!-- IMAGES -->
+        <div class="gallery-item"><img src="images/osogram/58b536bf-9182-4379-a397-b0aeb35769f6.JPG" alt=""></div>
+        <div class="gallery-item"><img src="images/tech training/WhatsApp Image 2025-05-25 at 9.57.03 PM.jpeg" alt=""></div>
+        <div class="gallery-item"><img src="images/osogram/346151fb-2834-478c-8f60-2222829ab548.JPG" alt=""></div>
+        <div class="gallery-item"><img src="images/tech training/8062d9ea-e4a0-441e-97a5-ce810b33f349.JPG" alt=""></div>
+        <div class="gallery-item"><img src="images/tech training/292a623a-5ea3-4a5e-bdd6-837a4f808a35.JPG" alt=""></div>
+        <div class="gallery-item"><img src="images/Human Right/WhatsApp Image 2025-05-25 at 9.51.52 PM.jpeg" alt=""></div>
+        <div class="gallery-item"><img src="images/Human Right/WhatsApp Image 2025-05-25 at 9.51.57 PM.jpeg" alt=""></div>
+        <div class="gallery-item"><img src="images/osogram/b316dd9d-c1ac-4bed-875d-c80dc45d6d24.JPG" alt=""></div>
+        <div class="gallery-item"><img src="images/osogram/cc1545b6-c2cd-4eb8-9824-c27bbf063eb3.JPG" alt=""></div>
+        <div class="gallery-item"><img src="images/osogram/d9c5bfc6-7cc8-483d-b7f5-292926d5682c.jpg" alt=""></div>
+        <div class="gallery-item"><img src="images/osogram/e01e3a8c-6ae0-453d-a1cd-de45f751a101.JPG" alt=""></div>
+        <div class="gallery-item"><img src="images/osogram/6c65a805-3b5b-4ece-9b92-6f6da9750b61 2.JPG" alt=""></div>
+        <div class="gallery-item"><img src="images/osogram/6fa764b2-7da3-4707-9f77-52084bff3e79.JPG" alt=""></div>
+        <div class="gallery-item"><img src="images/osogram/8d9ca75a-5bc9-4d97-88ca-3a6e2c67442a.JPG" alt=""></div>
+        <div class="gallery-item"><img src="images/tech training/8062d9ea-e4a0-441e-97a5-ce810b33f349.JPG" alt=""></div>
+        <div class="gallery-item"><img src="images/tech training/fec96b25-29c7-4051-aaec-a365d4c00345.JPG" alt=""></div>
+        <div class="gallery-item"><img src="images/tech training/b0e44b92-f411-430d-94eb-2497053e27e0.JPG" alt=""></div>
+        <div class="gallery-item"><img src="images/osogram/9cc685f4-e26e-4522-b746-a0ba5c0e8f19.JPG" alt=""></div>
+        <div class="gallery-item"><img src="images/osogram/9ee0bb2a-f95c-4b1c-a3ec-ac9f7000c67e.JPG" alt=""></div>
+        <div class="gallery-item"><img src="images/osogram/e407f47b-f4c0-4c97-be3d-f85f16fcfec3.JPG" alt=""></div>
+        <div class="gallery-item"><img src="images/osogram/9cc4bd74-2aab-41a4-b2d2-1c4ee6a8513b.JPG" alt=""></div>
+        <div class="gallery-item"><img src="images/osogram/1e13442f-93ec-4fab-b035-dcc872ae83ee.JPG" alt=""></div>
+        <div class="gallery-item"><img src="images/osogram/004fb067-b99e-486b-a39a-46705b2dc2a2.JPG" alt=""></div>
+
+        <!-- VIDEO -->
+        <div class="gallery-item">
+        <video controls>
+            <source src="images/osogram/f3344ebf-6d61-4ffa-983c-e194a3e38ecf.MP4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+    </div>
+
+    <div class="gallery-button-container">
+        <a href="gallery.html" class="view-gallery-button">View Full Gallery →</a>
+    </div>
+    </section>  
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/servicom-logo-removebg-preview.png" alt="SERVICOM Logo">
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 SERVICOM CDS Group, NYSC Osogbo. All Rights Reserved.</p>
+                <p>Website created by Richie Mighty</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // You can add JavaScript functionality here if needed
+        // For example, image lightbox or other interactive elements
+    </script>
+</body>
+</html>
