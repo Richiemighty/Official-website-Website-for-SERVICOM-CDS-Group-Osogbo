@@ -9,12 +9,6 @@
       "whatsapp": "https://wa.me/2348161199753"
     },
     {
-      "name": "Adeyanju Oluwakorede Orebi",
-      "position": "Vice President",
-      "image": "current/images/excos/vice-president.jpg",
-      "whatsapp": "https://wa.me/2349032575771"
-    },
-    {
       "name": "Michael Chidinma Ebere",
       "position": "General Secretary",
       "image": "current/images/excos/general-secretary.jpg",
@@ -59,19 +53,13 @@
     {
       "name": "MARVELLOUS EMERENI",
       "position": "Media Manager",
-      "image": "current/images/excos/media-manager2.jpeg",
+      "image": "current/images/excos/media-manager2.jpg",
       "whatsapp": "https://wa.me/2349123795282"
-    },
-    {
-      "name": "Oridemilade Sly",
-      "position": "PRO",
-      "image": "current/images/excos/pro.jpg",
-      "whatsapp": "https://wa.me/2347019787716"
     },
     {
       "name": "Olatunde Damola T",
       "position": "Welfare Officer",
-      "image": "current/images/excos/welfare-officer.jpeg",
+      "image": "current/images/excos/welfare-officer.jpg",
       "whatsapp": "https://wa.me/2348158358057"
     },
     {
@@ -79,6 +67,18 @@
       "position": "Speaker",
       "image": "current/images/excos/speaker.jpg",
       "whatsapp": "https://wa.me/2347062119081"
-    }
+    },
+    {
+      "name": "Adeyanju Oluwakorede Orebi",
+      "position": "Ex-Vice President",
+      "image": "current/images/excos/vice-president.jpg",
+      "whatsapp": "https://wa.me/2349032575771"
+    },
+    {
+      "name": "Oridemilade Sly",
+      "position": "Ex-PRO",
+      "image": "current/images/excos/pro.jpg",
+      "whatsapp": "https://wa.me/2347019787716"
+    }    
   ]
 }
