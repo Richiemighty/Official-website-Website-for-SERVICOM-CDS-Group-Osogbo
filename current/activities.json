@@ -17,6 +17,24 @@
       "flyer": "current/images/activities/osun-grove-visit/flyer1.jpeg",
       "description": "The SERVICOM CDS team visited the UNESCO World Heritage Site, Osun Sacred Grove, to promote cultural awareness and environmental stewardship among corps members. The outing reinforced our commitment to holistic community engagement — blending heritage preservation with public service values.",
       "pageUrl": "current/pages/osun-grove-visit.html"
+    },
+    {
+      "id": "pas-sound-system",
+      "title": "Acquisition of New PAS Sound System",
+      "date": "March 10, 2026",
+      "venue": "",
+      "flyer": "current/images/activities/pas-sound-system/flyer.jpg",
+      "description": "Invested in a professional PAS sound system to enhance audio quality during CDS events, sensitization programs, and public engagements.",
+      "pageUrl": "current/pages/pas-sound-system.html"
+    },
+    {
+      "id": "drug-abuse-outreach",
+      "title": "Drug Abuse Awareness & Stationery Donation",
+      "date": "March 10, 2026",
+      "venue": "Christ Africa Grammar School, Osogbo",
+      "flyer": "current/images/activities/drug-abuse-outreach/flyer.jpg",
+      "description": "Educated 350 students on drug abuse prevention and donated custom SERVICOM-branded stationery.",
+      "pageUrl": "current/pages/drug-abuse-outreach.html"
     }
   ]
 }
