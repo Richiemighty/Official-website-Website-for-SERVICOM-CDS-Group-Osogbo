@@ -35,6 +35,24 @@
       "flyer": "current/images/activities/drug-abuse-outreach/flyer.png",
       "description": "Educated 350 students on drug abuse prevention and donated custom SERVICOM-branded stationery.",
       "pageUrl": "current/pages/drug-abuse-outreach.html"
+    },
+    {
+      "id": "consumer-awareness-osun-mall",
+      "title": "Consumer Awareness Sensitisation at Osun Mall",
+      "date": "April 21, 2026",
+      "venue": "Osun Mall, Osogbo, Osun State",
+      "flyer": "current/images/activities/consumer-awareness-osun-mall/flyer.jpeg",
+      "description": "Promoted consumer rights and fair business practices through direct engagement with customers and traders at Osun Mall. Led by President Adewuyi Omotola, the team educated citizens on enforcing their rights in physical and digital marketplaces.",
+      "pageUrl": "current/pages/consumer-awareness-osun-mall.html"
+    },
+    {
+      "id": "acg-inter-cds-competition",
+      "title": "ACG Inter-CDS Competition – Overall Winners!",
+      "date": "May 13, 2026",
+      "venue": "Ataoja School of Science, Osogbo",
+      "flyer": "current/images/activities/acg-inter-cds-competition/flyer.jpeg",
+      "description": "Crowned Overall Winners at the ACG Inter-CDS Competition! Secured 1st in Quiz, 2nd in Debate, and 1st Overall — showcasing excellence in knowledge, advocacy, and teamwork.",
+      "pageUrl": "current/pages/acg-inter-cds-competition.html"
     }
   ]
 }
