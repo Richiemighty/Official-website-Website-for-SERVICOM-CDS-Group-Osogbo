@@ -53,6 +53,15 @@
       "flyer": "current/images/activities/acg-inter-cds-competition/flyer.jpeg",
       "description": "Crowned Overall Winners at the ACG Inter-CDS Competition! Secured 1st in Quiz, 2nd in Debate, and 1st Overall — showcasing excellence in knowledge, advocacy, and teamwork.",
       "pageUrl": "current/pages/acg-inter-cds-competition.html"
+    },
+    {
+      "id": "benches-suggestion-box",
+      "title": "Provision of Benches & Suggestion Box",
+      "date": "May 10, 2026",
+      "venue": "NYSC Secretariat, Osogbo",
+      "flyer": "current/images/activities/benches-suggestion-box/flyer1.jpg",
+      "description": "Installed benches and a suggestion box at the local government to improve member comfort and gather feedback for service enhancement.",
+      "pageUrl": "current/pages/benches-suggestion-box.html"
     }
   ]
 }
