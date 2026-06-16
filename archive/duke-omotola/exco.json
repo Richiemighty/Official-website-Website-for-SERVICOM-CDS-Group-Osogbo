@@ -5,91 +5,92 @@
     {
       "name": "Adewuyi Omotola",
       "position": "President",
-      "image": "current/images/excos/president.jpg",
+      "image": "images/excos/president.jpg",
       "whatsapp": "https://wa.me/2348161199753"
     },
     {
-      "name": "Lala Ifedayo Valentine ",
+      "name": "Lala Ifedayo Valentine",
       "position": "Vice President",
-      "image": "current/images/excos/new vp.jpeg",
+      "image": "images/excos/new vp1.jpeg",
       "whatsapp": "https://wa.me/2349073578423"
-    },    {
-      "name": "Wuraola Oyetomi ",
+    },
+    {
+      "name": "Wuraola Oyetomi",
       "position": "PRO",
-      "image": "current/images/excos/new pro.jpeg",
+      "image": "images/excos/new pro.jpeg",
       "whatsapp": "https://wa.me/2349039288390"
     },
     {
       "name": "Michael Chidinma Ebere",
       "position": "General Secretary",
-      "image": "current/images/excos/general-secretary.jpg",
+      "image": "images/excos/general-secretary.jpg",
       "whatsapp": "https://wa.me/2348114002681"
     },
     {
       "name": "Damisayo Jahayo Chukwuka",
-      "position": "Ass General Secretary",
-      "image": "current/images/excos/general-secretary2.jpg",
+      "position": "Assistant General Secretary",
+      "image": "images/excos/general-secretary2.jpg",
       "whatsapp": "https://wa.me/2348107026361"
     },
     {
       "name": "Kareem Mustapha Babatunde",
       "position": "IT Officer",
-      "image": "current/images/excos/it-officer.jpg",
+      "image": "images/excos/it-officer.jpg",
       "whatsapp": "https://wa.me/2349066875485"
     },
     {
-      "name": "Akindeko Omomayowa Success ",
+      "name": "Akindeko Omomayowa Success",
       "position": "Social Director",
-      "image": "current/images/excos/social-director.jpg",
+      "image": "images/excos/social-director.jpg",
       "whatsapp": "https://wa.me/2349041579277"
     },
     {
       "name": "Unuode Ogheneteyeri Ruth",
       "position": "Treasurer",
-      "image": "current/images/excos/treasurer.jpg",
+      "image": "images/excos/treasurer.jpg",
       "whatsapp": "https://wa.me/2348114312520"
     },
     {
       "name": "Oluwatosin Israel",
-      "position": "Sport director",
-      "image": "current/images/excos/sport-director.jpg",
+      "position": "Sports Director",
+      "image": "images/excos/sport-director.jpg",
       "whatsapp": "https://wa.me/2347036883794"
     },
     {
-      "name": "Opoola  Barakat Omoshalewa",
+      "name": "Opoola Barakat Omoshalewa",
       "position": "Media Manager",
-      "image": "current/images/excos/media-manager.jpg",
+      "image": "images/excos/media-manager.jpg",
       "whatsapp": "https://wa.me/2348146908375"
     },
     {
       "name": "MARVELLOUS EMERENI",
       "position": "Media Manager",
-      "image": "current/images/excos/media-manager2.jpg",
+      "image": "images/excos/media-manager2.jpg",
       "whatsapp": "https://wa.me/2349123795282"
     },
     {
       "name": "Olatunde Damola T",
       "position": "Welfare Officer",
-      "image": "current/images/excos/welfare-officer.jpg",
+      "image": "images/excos/welfare-officer.jpg",
       "whatsapp": "https://wa.me/2348158358057"
     },
     {
       "name": "Popoola Joshua Olatayo",
       "position": "Speaker",
-      "image": "current/images/excos/speaker.jpg",
+      "image": "images/excos/speaker.jpg",
       "whatsapp": "https://wa.me/2347062119081"
     },
     {
       "name": "Adeyanju Oluwakorede Orebi",
       "position": "Ex-Vice President",
-      "image": "current/images/excos/vice-president.jpg",
+      "image": "images/excos/vice-president.jpg",
       "whatsapp": "https://wa.me/2349032575771"
     },
     {
       "name": "Oridemilade Sly",
       "position": "Ex-PRO",
-      "image": "current/images/excos/pro.jpg",
+      "image": "images/excos/pro.jpg",
       "whatsapp": "https://wa.me/2347019787716"
-    }    
+    }
   ]
 }
