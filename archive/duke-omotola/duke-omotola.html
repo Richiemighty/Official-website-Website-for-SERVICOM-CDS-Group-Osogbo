@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duke Omotola Administration | SERVICOM CDS Osogbo</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ---------- Tokens ---------- */
+    :root {
+      --navy: #1a237e;
+      --navy-deep: #10164f;
+      --green: #2e7d32;
+      --green-deep: #1b5e20;
+      --paper: #f6f5f0;
+      --card: #ffffff;
+      --ink: #1c1c1c;
+      --ink-soft: #5a5a5a;
+      --gold: #c9a227;
+      --rule: rgba(26, 35, 126, 0.12);
+    }
+
+    /* ---------- Masthead ---------- */
+    .archive-header {
+      position: relative;
+      text-align: center;
+      padding: 60px 20px 50px;
+      margin-bottom: 10px;
+      background: radial-gradient(circle at 50% 0%, rgba(26,35,126,0.06), transparent 60%);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .archive-seal {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border: 1.5px solid var(--gold);
+      border-radius: 50%;
+      margin-bottom: 22px;
+      color: var(--gold);
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      font-size: 0.78rem;
+    }
+
+    .archive-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--green-deep);
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    .archive-eyebrow::before,
+    .archive-eyebrow::after {
+      content: '';
+      width: 28px;
+      height: 1px;
+      background: var(--gold);
+      display: inline-block;
+    }
+
+    .archive-title {
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      color: var(--navy-deep);
+      margin-bottom: 16px;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+    }
+
+    .archive-subtitle {
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      font-size: 1.2rem;
+      color: var(--ink-soft);
+      max-width: 620px;
+      margin: 0 auto;
+      line-height: 1.55;
+    }
+
+    /* ---------- Section shells ---------- */
+    .archive-block {
+      max-width: 1100px;
+      margin: 0 auto 56px;
+      padding: 0 20px;
+    }
+
+    .block-heading {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+
+    .block-heading h2 {
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      font-size: 1.7rem;
+      color: var(--navy-deep);
+      white-space: nowrap;
+      margin: 0;
+    }
+
+    .block-heading::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, var(--rule), transparent);
+    }
+
+    /* ---------- Executives ---------- */
+    .executive-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .executive-card {
+      background: var(--card);
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid var(--rule);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .executive-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 28px rgba(26,35,126,0.1);
+    }
+
+    .executive-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      display: block;
+      filter: saturate(0.96);
+    }
+
+    .executive-info {
+      padding: 18px 16px 20px;
+      text-align: center;
+      border-top: 3px solid var(--green);
+    }
+
+    .executive-name {
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: var(--navy-deep);
+      margin: 4px 0 6px;
+    }
+
+    .executive-position {
+      font-family: 'Inter', sans-serif;
+      color: var(--green-deep);
+      font-weight: 600;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* ---------- Activities ---------- */
+    .activities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 26px;
+    }
+
+    .activity-card {
+      background: var(--card);
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid var(--rule);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .activity-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 30px rgba(0,0,0,0.08);
+    }
+
+    .activity-img {
+      width: 100%;
+      height: 175px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .activity-content {
+      padding: 22px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .activity-date {
+      display: inline-block;
+      align-self: flex-start;
+      font-family: 'Inter', sans-serif;
+      color: var(--green-deep);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 3px;
+      margin-bottom: 14px;
+      background: none;
+      border-radius: 0;
+    }
+
+    .activity-title {
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      font-size: 1.22rem;
+      margin: 0 0 8px;
+      color: var(--ink);
+      line-height: 1.3;
+    }
+
+    .activity-desc {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.93rem;
+      color: var(--ink-soft);
+      margin-bottom: 16px;
+      line-height: 1.55;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      flex: 1;
+    }
+
+    .read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--green-deep);
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.88rem;
+      letter-spacing: 0.02em;
+      transition: gap 0.2s ease;
+    }
+
+    .read-more:hover {
+      gap: 10px;
+      color: var(--green);
+    }
+
+    /* ---------- Timeline ---------- */
+    .timeline-section {
+      background: var(--navy-deep);
+      border-radius: 4px;
+      padding: 50px 30px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .timeline-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 85% 10%, rgba(201,162,39,0.12), transparent 55%);
+      pointer-events: none;
+    }
+
+    .timeline-section .block-heading h2 {
+      color: #fff;
+    }
+
+    .timeline-section .block-heading::after {
+      background: linear-gradient(to right, rgba(255,255,255,0.18), transparent);
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 auto;
+      padding-left: 28px;
+      border-left: 1px solid rgba(255,255,255,0.18);
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 0 0 36px 28px;
+      margin-bottom: 0;
+      background: none;
+      border-radius: 0;
+    }
+
+    .timeline-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-marker {
+      position: absolute;
+      left: -42px;
+      top: 2px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 0 4px rgba(201,162,39,0.18);
+    }
+
+    .timeline-item strong {
+      display: block;
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      font-size: 1.18rem;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .timeline-item p {
+      font-family: 'Inter', sans-serif;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.6;
+      font-size: 0.93rem;
+      margin: 0;
+    }
+
+    /* ---------- Footer / back button ---------- */
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--navy-deep);
+      color: #fff;
+      padding: 13px 28px;
+      border-radius: 2px;
+      text-decoration: none;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 0.88rem;
+      letter-spacing: 0.04em;
+      transition: background 0.25s ease, transform 0.25s ease;
+    }
+
+    .back-btn:hover {
+      background: var(--green-deep);
+      transform: translateX(-3px);
+    }
+
+    @media (max-width: 640px) {
+      .archive-header {
+        padding: 48px 16px 40px;
+      }
+
+      .block-heading h2 {
+        font-size: 1.4rem;
+      }
+
+      .timeline {
+        padding-left: 20px;
+      }
+
+      .timeline-item {
+        padding-left: 20px;
+      }
+
+      .timeline-marker {
+        left: -29px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="header-placeholder"></div>
+
+<section class="section" style="padding-top:0;">
+
+  <div class="archive-header">
+    <div class="archive-seal">CDS<br>OSB</div>
+    <div class="archive-eyebrow">Administration Record</div>
+    <h1 class="archive-title">Duke Omotola Administration</h1>
+    <p class="archive-subtitle">A legacy of service, integrity, and community impact</p>
+  </div>
+
+  <!-- EXECUTIVES -->
+  <div class="archive-block">
+    <div class="block-heading"><h2>Executive Committee</h2></div>
+    <div class="executive-grid" id="executive-grid"></div>
+  </div>
+
+  <!-- ACTIVITIES -->
+  <div class="archive-block">
+    <div class="block-heading"><h2>Activities</h2></div>
+    <div class="activities-grid" id="activities-grid"></div>
+  </div>
+
+  <!-- TIMELINE -->
+  <div class="archive-block">
+    <div class="block-heading"><h2 style="color:var(--navy-deep);">Timeline</h2></div>
+    <div class="timeline-section">
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </div>
+
+  <div style="text-align:center; margin: 10px 0 40px;">
+    <a href="./archive.html" class="back-btn">&larr; Return</a>
+  </div>
+
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="./includes/loader.js"></script>
+
+<!-- ===================== EXECUTIVES ===================== -->
+<script>
+fetch('./exco.json')
+  .then(res => res.json())
+  .then(data => {
+    const grid = document.getElementById('executive-grid');
+    grid.innerHTML = "";
+
+    data.executives.forEach(member => {
+      grid.innerHTML += `
+        <div class="executive-card">
+          <img src="${member.image}" alt="${member.name}">
+          <div class="executive-info">
+            <div class="executive-name">${member.name}</div>
+            <div class="executive-position">${member.position}</div>
+          </div>
+        </div>
+      `;
+    });
+  })
+  .catch(err => {
+    console.error("EXCO ERROR:", err);
+    document.getElementById('executive-grid').innerHTML =
+      "<p style='text-align:center;'>Failed to load executives</p>";
+  });
+</script>
+
+<!-- ===================== ACTIVITIES ===================== -->
+<script>
+fetch('./activities.json')
+  .then(res => res.json())
+  .then(data => {
+    const grid = document.getElementById('activities-grid');
+    grid.innerHTML = "";
+
+    data.activities.forEach(act => {
+      grid.innerHTML += `
+        <div class="activity-card">
+          <img class="activity-img" src="${act.flyer}">
+          <div class="activity-content">
+            <span class="activity-date">${act.date}</span>
+            <h3 class="activity-title">${act.title}</h3>
+            <p class="activity-desc">${act.description}</p>
+            <a class="read-more" href="${act.pageUrl}">Read More &rarr;</a>
+          </div>
+        </div>
+      `;
+    });
+  })
+  .catch(err => {
+    document.getElementById('activities-grid').innerHTML =
+      "<p>No activities found</p>";
+  });
+</script>
+
+<!-- ===================== TIMELINE ===================== -->
+<script>
+fetch('./activities.json')
+  .then(res => res.json())
+  .then(data => {
+    const timeline = document.getElementById('timeline');
+    timeline.innerHTML = "";
+
+    const sorted = [...data.activities].sort((a, b) =>
+      new Date(b.date) - new Date(a.date)
+    );
+
+    sorted.forEach((act) => {
+      timeline.innerHTML += `
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <strong>${act.title}</strong>
+          <p>${act.description}</p>
+        </div>
+      `;
+    });
+  })
+  .catch(err => {
+    document.getElementById('timeline').innerHTML =
+      "<p style='color: rgba(255,255,255,0.7);'>Timeline unavailable</p>";
+  });
+</script>
+
+</body>
+</html>
