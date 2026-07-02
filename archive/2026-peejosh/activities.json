@@ -1,6 +1,13 @@
 {
-  "id": "nysc-camp-donation",
-  "title": "SERVICOM CDS Groups Donate Essential Items...",
-  "flyer": "images/activities/nysc-camp-donation/donation (1).jpeg",
-  "pageUrl": "pages/nysc-camp-donation.html"
+  "activities": [
+    {
+      "id": "nysc-camp-donation",
+      "title": "SERVICOM CDS Groups Donate Essential Items...",
+      "date": "June 10, 2026",
+      "venue": "Permanent Orientation Camp, Ede, Osun State",
+      "flyer": "images/activities/nysc-camp-donation/donation (1).jpeg",
+      "description": "Donation of sanitary pads, tissues, drinks, biscuits, and welfare materials.",
+      "pageUrl": "pages/nysc camp donation.html"
+    }
+  ]
 }
