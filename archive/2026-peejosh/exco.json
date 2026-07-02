@@ -1,0 +1,84 @@
+{
+  "batch": "2025/2026 Executives",
+  "period": "May 2026 - Present",
+  "executives": [
+    {
+      "name": "Popoola Joshua Olatayo",
+      "position": "President",
+      "image": "images/excos/president.jpg",
+      "whatsapp": "https://wa.me/2347062119081"
+    },
+    {
+      "name": "Lala Ifedayo Valentine",
+      "position": "Vice President",
+      "image": "images/excos/new vp.jpeg",
+      "whatsapp": "https://wa.me/2349073578423"
+    },
+    {
+      "name": "Owolabi Abel Seun",
+      "position": "PRO",
+      "image": "images/excos/new pro.jpeg",
+      "whatsapp": "https://wa.me/2347089964329"
+    },
+    {
+      "name": "Michael Chidinma Ebere",
+      "position": "General Secretary",
+      "image": "images/excos/general-secretary.jpg",
+      "whatsapp": "https://wa.me/2348114002681"
+    },
+    {
+      "name": "Damisayo Jahayo Chukwuka",
+      "position": "Assistant General Secretary",
+      "image": "images/excos/general-secretary2.jpg",
+      "whatsapp": "https://wa.me/2348107026361"
+    },
+    {
+      "name": "Kareem Mustapha Babatunde",
+      "position": "IT Officer",
+      "image": "images/excos/it-officer.jpg",
+      "whatsapp": "https://wa.me/2349066875485"
+    },
+    {
+      "name": "Akindeko Omomayowa Success",
+      "position": "Social Director",
+      "image": "images/excos/social-director.jpg",
+      "whatsapp": "https://wa.me/2349041579277"
+    },
+    {
+      "name": "Abdulrasaq Lateefat Abidemi",
+      "position": "Treasurer",
+      "image": "images/excos/treasurer.jpeg",
+      "whatsapp": "https://wa.me/2347010415657"
+    },
+    {
+      "name": "Oluwatosin Israel",
+      "position": "Sports Director",
+      "image": "images/excos/sport-director.jpg",
+      "whatsapp": "https://wa.me/2347036883794"
+    },
+    {
+      "name": "Alabi Joshua Oluwaseun",
+      "position": "Media Manager",
+      "image": "images/excos/media-manager.jpeg",
+      "whatsapp": "https://wa.me/2348120306370"
+    },
+    {
+      "name": "Opoola Oluwasegun John ",
+      "position": "Media Manager",
+      "image": "images/excos/media-manager2.jpeg",
+      "whatsapp": "https://wa.me/+2347031057724"
+    },
+    {
+      "name": "Olatunde Damola T",
+      "position": "Welfare Officer",
+      "image": "images/excos/welfare-officer.jpg",
+      "whatsapp": "https://wa.me/2348158358057"
+    },
+    {
+      "name": "zubuike Chika Rita",
+      "position": "Speaker",
+      "image": "images/excos/speaker.jpeg",
+      "whatsapp": "https://wa.me/2349067272024"
+    }
+  ]
+}
