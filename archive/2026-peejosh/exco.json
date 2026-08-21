@@ -21,10 +21,10 @@
       "whatsapp": "https://wa.me/2347089964329"
     },
     {
-      "name": "Michael Chidinma Ebere",
+      "name": "Omoriwhovo Daniel Efeoghene",
       "position": "General Secretary",
       "image": "images/excos/general-secretary.jpg",
-      "whatsapp": "https://wa.me/2348114002681"
+      "whatsapp": "https://wa.me/2349054256786"
     },
     {
       "name": "Damisayo Jahayo Chukwuka",
@@ -39,10 +39,10 @@
       "whatsapp": "https://wa.me/2349066875485"
     },
     {
-      "name": "Akindeko Omomayowa Success",
+      "name": "Ibrahim Bashir Olayinka",
       "position": "Social Director",
       "image": "images/excos/social-director.jpg",
-      "whatsapp": "https://wa.me/2349041579277"
+      "whatsapp": "https://wa.me/23463940888"
     },
     {
       "name": "Abdulrasaq Lateefat Abidemi",
@@ -79,6 +79,18 @@
       "position": "Speaker",
       "image": "images/excos/speaker.jpeg",
       "whatsapp": "https://wa.me/2349067272024"
+    },
+    {
+      "name": "Michael Chidinma Ebere",
+      "position": "Ex-General Secretary",
+      "image": "images/excos/ex-general-secretary.jpg",
+      "whatsapp": "https://wa.me/2348114002681"
+    },
+    {
+      "name": "Akindeko Omomayowa Success",
+      "position": "Ex-Social Director",
+      "image": "images/excos/ex-social-director.jpg",
+      "whatsapp": "https://wa.me/2349041579277"
     }
   ]
 }
